@@ -1,0 +1,1 @@
+﻿Get-WmiObject -Class win32_service -ComputerName Enter hostname here| ? { $_.name -like " " } | % { "$($_.name) is $($_.state)" }
